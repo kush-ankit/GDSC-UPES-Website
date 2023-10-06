@@ -8,20 +8,20 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.logo}>GDSC UPES</div>
       <ul className={styles.navLinks}>
-        <li className={styles.navLink}>
-          <Link to="/">Home</Link>
+        <li >
+          <Link className={styles.navLink} to="/">Home</Link>
         </li>
-        <li className={styles.navLink}>
-          <Link to="/events">Events</Link>
+        <li >
+          <Link className={styles.navLink} to="/events">Events</Link>
         </li>
-        <li className={styles.navLink}>
-          <Link to="/team">Team</Link>
+        <li>
+          <Link className={styles.navLink} to="/team">Team</Link>
         </li>
-        <li className={styles.navLink}>
-          <Link to="/contact">Contact</Link>
+        <li>
+          <Link className={styles.navLink} to="/contact">Contact</Link>
         </li>
       </ul>
-      <button className={styles.button}><HiMiniMoon/></button>
+      <button className={styles.button}><HiMiniMoon /></button>
     </nav>
   );
 };
